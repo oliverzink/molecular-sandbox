@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="moleculeSim" width="500" height="500"></canvas>
+    <script src="index.js"></script>
+    <div class="sliders">
+        <p id="numMoleculesLabel">NUMBER OF MOLECULES OF EACH COLOR</p>
+        <p id="numMoleculesLabel2">Set These Values Before Starting</p>
+
+        
+        <div class ="numMoleculesContainer">
+            <input type="range" min="0" max="800" value="500" class="slider blue" id="numBlue" oninput="this.nextElementSibling.value = this.value">
+            <output class="rangeVals">500</output>
+            <input type="range" min="0" max="800" value="500" class="slider red" id="numRed" oninput="this.nextElementSibling.value = this.value">
+            <output class="rangeVals">500</output>
+            <input type="range" min="0" max="800" value="500" class="slider green" id="numGreen" oninput="this.nextElementSibling.value = this.value">
+            <output class="rangeVals">500</output>
+            <input type="range" min="0" max="800" value="500" class="slider yellow" id="numYellow" oninput="this.nextElementSibling.value = this.value">
+            <output class="rangeVals">500</output>
+        </div>
+        <div class="otherSliders">
+            <div id="square1">
+                <img/>
+            </div>
+            <div id="square2">
+                <img/>
+            </div>
+            <div id="square3">
+                <img/>
+            </div>
+            <div id="square4">
+                <img/>
+            </div>
+            <div class="blueSliders">
+                <input type="range" min="-1" max="1" value=".8422" step=".01" class="slider blue" id="blue_on_blue" oninput="this.nextElementSibling.value = this.value;">
+                <output class="rangeVals" id="b1"></output>
+                <input type="range" min="-1" max="1" value="-.8050" step=".01" class="slider red" id="blue_on_red" oninput="this.nextElementSibling.value = this.value">
+                <output class="rangeVals" id="b2"></output>
+                <input type="range" min="-1" max="1" value="-.63" step=".01" class="slider green" id="blue_on_green" oninput="this.nextElementSibling.value = this.value">
+                <output class="rangeVals" id="b3"></output>
+                <input type="range" min="-1" max="1" value="-.6206" step=".01" class="slider yellow" id="blue_on_yellow" oninput="this.nextElementSibling.value = this.value">
+                <output class="rangeVals" id="b4"></output>
+            </div>
+            <div class="redSliders">
+                <input type="range" min="-1" max="1" value="-.9" step=".01" class="slider blue" id="red_on_blue" oninput="this.nextElementSibling.value = this.value">
+                <output class="rangeVals" id="r1"></output>
+                <input type="range" min="-1" max="1" value="-.35" step=".01" class="slider red" id="red_on_red" oninput="this.nextElementSibling.value = this.value">
+                <output class="rangeVals" id="r2"></output>
+                <input type="range" min="-1" max="1" value="-.8131" step=".01" class="slider green" id="red_on_green" oninput="this.nextElementSibling.value = this.value">
+                <output class="rangeVals" id="r3"></output>
+                <input type="range" min="-1" max="1" value="-.424" step=".01" class="slider yellow" id="red_on_yellow" oninput="this.nextElementSibling.value = this.value">
+                <output class="rangeVals" id="r4"></output>
+            </div>
+            <div class="greenSliders">
+                <input type="range" min="-1" max="1" value="-.9" step=".01" class="slider blue" id="green_on_blue" oninput="this.nextElementSibling.value = this.value">
+                <output class="rangeVals" id="g1"></output>
+                <input type="range" min="-1" max="1" value="-.63" step=".01" class="slider red" id="green_on_red" oninput="this.nextElementSibling.value = this.value">
+                <output class="rangeVals" id="g2"></output>
+                <input type="range" min="-1" max="1" value=".8782" step=".01" class="slider green" id="green_on_green" oninput="this.nextElementSibling.value = this.value">
+                <output class="rangeVals" id="g3"></output>
+                <input type="range" min="-1" max="1" value="-.11" step=".01" class="slider yellow" id="green_on_yellow" oninput="this.nextElementSibling.value = this.value">
+                <output class="rangeVals" id="g4"></output>
+            </div>
+            <div class="yellowSliders">
+                <input type="range" min="-1" max="1" value="-.8155" step=".01" class="slider blue" id="yellow_on_blue" oninput="this.nextElementSibling.value = this.value">
+                <output class="rangeVals" id="y1"></output>
+                <input type="range" min="-1" max="1" value="-.4872" step=".01" class="slider red" id="yellow_on_red" oninput="this.nextElementSibling.value = this.value">
+                <output class="rangeVals" id="y2"></output>
+                <input type="range" min="-1" max="1" value="-.6276" step=".01" class="slider green" id="yellow_on_green" oninput="this.nextElementSibling.value = this.value">
+                <output class="rangeVals" id="y3"></output>
+                <input type="range" min="-1" max="1" value="-1" step=".01" class="slider yellow" id="yellow_on_yellow" oninput="this.nextElementSibling.value = this.value">
+                <output class="rangeVals" id="y4"></output>
+            </div>
+
+            <input type="range" min=".01" max="1" value=".4" step=".01" class="slider pink" id="speed" oninput="this.nextElementSibling.value = this.value">
+            <output class="rangeVals2" id="speedVal">.40</output>
+           
+            </div>
+          
+    </div>
+   
+  
+    <div class="buttons">
+        <button id="start_button"  type="submit" value="enter" onclick="start(); 
+        document.getElementById('start_button').disabled = true">START</button>
+        <button id="stop_button" type="submit" value="enter" 
+        onclick="window.cancelAnimationFrame(myRequestId); reset(); const atoms = []; 
+        document.getElementById('start_button').disabled = false">STOP</button>
+        <button id="preset1_button"  type="submit" value="enter" onclick="preset1();">PRESET #1</button>
+        <button id="preset2_button"  type="submit" value="enter" onclick="preset2();">PRESET #2</button>
+        <button id="preset3_button"  type="submit" value="enter" onclick="preset3();">PRESET #3</button>
+        <button id="preset4_button"  type="submit" value="enter" onclick="preset4();">PRESET #4</button>
+        <button id="preset5_button"  type="submit" value="enter" onclick="preset5();">PRESET #5</button>
+
+        <button id="randomize_button"  type="submit" value="enter" onclick="randomizeSliders();">RANDOMIZE</button>
+    </div>
+  
+    <div class="labels">
+        <p id="topLabel">MOLECULE CHARGE (negative = attraction, positive = repulsion)</p>
+        <p id="bottomLabel">please note this program requires sizable computation power. start out slow.</p>
+        <p id="allBlueLabel"></p>
+        <div class="blueLabels">
+            <p id="blue_on_blueLabel">Blue Charge on Blue</p>
+            <p id="blue_on_redLabel">Blue Charge on Red</p>
+            <p id="blue_on_greenLabel">Blue Charge on Green</p>
+            <p id="blue_on_yellowLabel">Blue Charge on Yellow</p>
+        </div>
+        <div class="redLabels">
+            <p id="red_on_blueLabel">Red Charge on Blue</p>
+            <p id="red_on_redLabel">Red Charge on Red</p>
+            <p id="red_on_greenLabel">Red Charge on Green</p>
+            <p id="red_on_yellowLabel">Red Charge on Yellow</p>
+        </div>
+        <div class="greenLabels">
+            <p id="green_on_blueLabel">Green Charge on Blue</p>
+            <p id="green_on_redLabel">Green Charge on Red</p>
+            <p id="green_on_greenLabel">Green Charge on Green</p>
+            <p id="green_on_yellowLabel">Green Charge on Yellow</p>
+        </div>
+        <div class="yellowLabels">
+            <p>Yellow Charge on Blue</p>
+            <p>Yellow Charge on Red</p>
+            <p>Yellow Charge on Green</p>
+            <p>Yellow Charge on Yellow</p>
+        </div>
+    </div>
+        <p id="speedLabel">SPEED OF ALL MOLECULES</p>
+    </div>
+</body>
+</html>
+

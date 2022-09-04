@@ -1,0 +1,331 @@
+
+body{
+    background-color: #2e2020;
+}
+
+.buttons > button{
+  border-radius: 10px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  margin: 0px;
+  padding: 10px 16px;
+  position: absolute;
+  text-align: center;
+  transition: color 100ms;
+  vertical-align: baseline;
+  touch-action: manipulation;
+}
+
+#start_button{
+    background-color: #54b603;;
+    
+    left: 585px;
+    top: 585px;
+   
+}
+#start_button:hover,
+#start_button:focus {
+  background-color: #90bb6d;
+}
+
+
+
+#stop_button{
+    background-color: #d92108;;
+    left: 665px;
+    top: 585px;
+}
+#stop_button:hover,
+#stop_button:focus {
+  background-color: #ca675a;
+}
+
+
+#preset1_button{
+    background-color: #8508d9;;
+    left: 970px;
+    top: 540px;
+}
+#preset2_button{
+    background-color: #8508d9;;
+    left:1080px;
+    top: 540px;
+}
+#preset3_button{
+    background-color: #8508d9;;
+    left: 860px;
+    top: 585px;
+}
+#preset4_button{
+    background-color: #8508d9;;
+    left: 970px;
+    top: 585px;
+}
+#preset5_button{
+    background-color: #8508d9;;
+    left: 1080px;
+    top: 585px;
+}
+
+#randomize_button{
+    background-color: #083cd9;;
+    left: 850px;
+    top: 540px;
+}
+
+#speed{
+    position: absolute;
+    left: 520px;
+    top: 560px;
+    width: 280px;
+    
+}
+
+#speedLabel{
+    color: #FFFFFF;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    left: 565px;
+    top: 520px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+   
+}
+
+
+.rangeVals{
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+.rangeVals2{
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    position: absolute;
+    left: 805px;
+    top: 560px;
+}
+
+#square1 {
+    border: solid 6px #05a6c2;
+    width: 640px;
+    height: 100px;
+    position: absolute;
+    left: 530px;
+    top: 55px;
+}
+#square2 {
+    border: solid 6px #d92108;
+    width: 640px;
+    height: 100px;
+    position: absolute;
+    left: 530px;
+    top: 175px;
+}
+#square3 {
+    border: solid 6px #71d61d;
+    width: 640px;
+    height: 100px;
+    position: absolute;
+    left: 530px;
+    top: 295px;
+}
+#square4 {
+    border: solid 6px #f7c914;
+    width: 640px;
+    height: 100px;
+    position: absolute;
+    left: 530px;
+    top: 415px;
+}
+
+
+.sliders {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 450px; /* Full-width */
+    height: 15px; /* Specified height */
+    outline: none; /* Remove outline */
+ 
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background: #ffffff; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #8b74f2; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+.numMoleculesContainer{
+    float: left;
+    width: 50%;
+}
+
+
+
+.otherSliders{
+    float:right;
+    float: top;
+    width: 50%;
+    
+}
+
+.blueSliders{
+    position: absolute;
+    top: 70px;
+    left: 670px;
+    
+
+}
+
+.redSliders{
+    position: absolute;
+    top: 190px;
+    left: 670px;
+   
+    
+}
+    
+.greenSliders{
+    position: absolute;
+    top: 310px;
+    left: 670px;
+}
+
+.yellowSliders{
+    position: absolute;
+    top: 430px;
+    left: 670px;
+}
+
+
+.blueLabels{
+     
+    color: #FFFFFF;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    position: absolute;
+    left: 550px;
+    top: 60px;
+}
+
+.redLabels{
+     
+    color: #FFFFFF;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    position: absolute;
+    left: 550px;
+    top: 180px;
+}
+.greenLabels{
+     
+    color: #FFFFFF;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    position: absolute;
+    left: 550px;
+    top: 300px;
+}
+.yellowLabels{
+     
+    color: #FFFFFF;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    position: absolute;
+    left: 550px;
+    top: 420px;
+}
+
+
+#numMoleculesLabel{
+    font-size: 15px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    margin-top: 1px;
+    margin-left: 70px;
+}
+#numMoleculesLabel2{
+    font-size: 12px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    margin-left: 135px;
+}
+
+
+
+#topLabel{
+    font-size: 20px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 2px;
+    margin-top: 8px;
+    position: absolute;
+    top: 12px;
+    left: 550px;
+}
+
+#bottomLabel{
+    font-size: 11px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 2px;
+    margin-top: 8px;
+    position: absolute;
+    top: 622px;
+    left: 790px;
+}
+
+.blue{
+    background:#05a6c2;
+}
+.red{
+    background:#d92108;
+}
+.green{
+    background:#71d61d;
+}
+.yellow{
+    background:#f7c914;
+}
+.pink{
+    background:#f714b7;
+}
+
