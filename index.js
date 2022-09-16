@@ -90,8 +90,6 @@ function applyRules(RULES) {
       a.x += a.vx;
       a.y += a.vy;
 
-      
-      // making the particles bounce off the walls
       if (a.x <= 0) {
         a.vx *= -1;
         a.x = 0;
@@ -218,23 +216,23 @@ function preset1(){
 function preset2(){
     document.getElementById("blue_on_blue").value = ".84";
     document.getElementById("blue_on_red").value = "-.81";
-    document.getElementById("blue_on_green").value = "-.63";
+    document.getElementById("blue_on_green").value = ".36";
     document.getElementById("blue_on_yellow").value = "-.62";
     
     document.getElementById("red_on_blue").value = "-.9";
-    document.getElementById("red_on_red").value = ".07";
+    document.getElementById("red_on_red").value = "-.18";
     document.getElementById("red_on_green").value = "-.81";
     document.getElementById("red_on_yellow").value = "-.42";
     
     document.getElementById("green_on_blue").value = "-.9";
     document.getElementById("green_on_red").value = "-.63";
-    document.getElementById("green_on_green").value = ".88";
-    document.getElementById("green_on_yellow").value = "-.11";
+    document.getElementById("green_on_green").value = ".87";
+    document.getElementById("green_on_yellow").value = "-.36";
     
     document.getElementById("yellow_on_blue").value = "-.82";
     document.getElementById("yellow_on_red").value = "-.49";
     document.getElementById("yellow_on_green").value = "-.63";
-    document.getElementById("yellow_on_yellow").value = ".49";
+    document.getElementById("yellow_on_yellow").value = "-.99";
 
     document.getElementById("speed").value = ".45";
     updateVals();
@@ -247,7 +245,7 @@ function preset3(){
     document.getElementById("blue_on_yellow").value = "-.62";
     
     document.getElementById("red_on_blue").value = "-.9";
-    document.getElementById("red_on_red").value = ".07";
+    document.getElementById("red_on_red").value = "-.35";
     document.getElementById("red_on_green").value = "-.81";
     document.getElementById("red_on_yellow").value = "-.42";
     
@@ -259,58 +257,58 @@ function preset3(){
     document.getElementById("yellow_on_blue").value = "-.82";
     document.getElementById("yellow_on_red").value = "-.49";
     document.getElementById("yellow_on_green").value = "-.63";
-    document.getElementById("yellow_on_yellow").value = ".49";
+    document.getElementById("yellow_on_yellow").value = "-.99";
 
     document.getElementById("speed").value = ".45";
     updateVals();
 }
 
 function preset4(){
-    document.getElementById("blue_on_blue").value = ".84";
-    document.getElementById("blue_on_red").value = "-.81";
-    document.getElementById("blue_on_green").value = "-.63";
-    document.getElementById("blue_on_yellow").value = "-.62";
+    document.getElementById("blue_on_blue").value = ".49";
+    document.getElementById("blue_on_red").value = "-.82";
+    document.getElementById("blue_on_green").value = ".17";
+    document.getElementById("blue_on_yellow").value = "-1";
     
-    document.getElementById("red_on_blue").value = "-.9";
-    document.getElementById("red_on_red").value = ".07";
-    document.getElementById("red_on_green").value = "-.81";
-    document.getElementById("red_on_yellow").value = "-.42";
+    document.getElementById("red_on_blue").value = "-.71";
+    document.getElementById("red_on_red").value = ".76";
+    document.getElementById("red_on_green").value = "-.08";
+    document.getElementById("red_on_yellow").value = ".42";
     
-    document.getElementById("green_on_blue").value = "-.9";
-    document.getElementById("green_on_red").value = "-.63";
-    document.getElementById("green_on_green").value = ".88";
-    document.getElementById("green_on_yellow").value = "-.11";
+    document.getElementById("green_on_blue").value = "-.98";
+    document.getElementById("green_on_red").value = "-.85";
+    document.getElementById("green_on_green").value = "-.41";
+    document.getElementById("green_on_yellow").value = "-.2";
     
-    document.getElementById("yellow_on_blue").value = "-.82";
-    document.getElementById("yellow_on_red").value = "-.49";
-    document.getElementById("yellow_on_green").value = "-.63";
-    document.getElementById("yellow_on_yellow").value = ".49";
+    document.getElementById("yellow_on_blue").value = "-.28";
+    document.getElementById("yellow_on_red").value = "-.02";
+    document.getElementById("yellow_on_green").value = ".41";
+    document.getElementById("yellow_on_yellow").value = ".41";
 
-    document.getElementById("speed").value = ".45";
+    document.getElementById("speed").value = ".42";
     updateVals();
 }
 
-function preset5(){
-    document.getElementById("blue_on_blue").value = ".84";
-    document.getElementById("blue_on_red").value = "-.81";
-    document.getElementById("blue_on_green").value = "-.63";
-    document.getElementById("blue_on_yellow").value = "-.62";
+function resetPreset(){
+    document.getElementById("blue_on_blue").value = "0";
+    document.getElementById("blue_on_red").value = "0";
+    document.getElementById("blue_on_green").value = "0";
+    document.getElementById("blue_on_yellow").value = "0";
     
-    document.getElementById("red_on_blue").value = "-.9";
-    document.getElementById("red_on_red").value = ".07";
-    document.getElementById("red_on_green").value = "-.81";
-    document.getElementById("red_on_yellow").value = "-.42";
+    document.getElementById("red_on_blue").value = "0";
+    document.getElementById("red_on_red").value = "0";
+    document.getElementById("red_on_green").value = "0";
+    document.getElementById("red_on_yellow").value = "0";
     
-    document.getElementById("green_on_blue").value = "-.9";
-    document.getElementById("green_on_red").value = "-.63";
-    document.getElementById("green_on_green").value = ".88";
-    document.getElementById("green_on_yellow").value = "-.11";
+    document.getElementById("green_on_blue").value = "0";
+    document.getElementById("green_on_red").value = "0";
+    document.getElementById("green_on_green").value = "0";
+    document.getElementById("green_on_yellow").value = "0";
     
-    document.getElementById("yellow_on_blue").value = "-.82";
-    document.getElementById("yellow_on_red").value = "-.49";
-    document.getElementById("yellow_on_green").value = "-.63";
-    document.getElementById("yellow_on_yellow").value = ".49";
+    document.getElementById("yellow_on_blue").value = "0";
+    document.getElementById("yellow_on_red").value = "0";
+    document.getElementById("yellow_on_green").value = "0";
+    document.getElementById("yellow_on_yellow").value = "0";
 
-    document.getElementById("speed").value = ".45";
+    document.getElementById("speed").value = ".5";
     updateVals();
 }
