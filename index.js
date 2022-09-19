@@ -123,7 +123,7 @@ update=()=>{
     petriDish.clearRect(0, 0, 500, 500);
     draw(0, 0, "black", 500);
     for (i = 0; i < molecules.length; i += 1) {
-        draw(molecules[i].x, molecules[i].y, molecules[i].color, 2.5);
+        draw(molecules[i].x, molecules[i].y, molecules[i].color, 2.2);
     }
     myRequestId = window.requestAnimationFrame(update);
 }
